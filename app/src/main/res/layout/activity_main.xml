@@ -1,29 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000">
-
-    <TextView
-        android:id="@+id/appNameTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:text="Myrestaurants"
-        android:textColor="@color/colorTextIcons"
-        android:textSize="40sp"
-        android:textStyle="bold" />
 
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/restaurant"
-        android:scaleType="centerCrop"/>
+        android:scaleType="centerCrop"
+        android:src="@drawable/restaurant" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -37,7 +26,6 @@
         android:layout_centerHorizontal="true"/>
 
 
-
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -47,4 +35,19 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
         android:textColor="@color/colorTextIcons"/>
+
+    <TextView
+        android:id="@+id/appNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@serif"
+        android:text="MyRestaurants"
+        android:textColor="@color/colorTextIcons"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+
 </RelativeLayout>
