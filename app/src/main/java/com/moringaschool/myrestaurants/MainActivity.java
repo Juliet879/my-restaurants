@@ -12,11 +12,13 @@ import android.widget.TextView;
 import com.moringaschool.myrestaurants.R;
 import com.moringaschool.myrestaurants.RestaurantsActivity;
 
+import java.text.BreakIterator;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity  implements View.OnClickListener {
 
 private static final String TAG = RestaurantsActivity.class.getSimpleName();
 
@@ -34,16 +36,19 @@ private static final String TAG = RestaurantsActivity.class.getSimpleName();
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        mFindRestaurantsButton.setOnClickListener(this) ;
 
-        View mFindRestaurantButton;
-        mFindRestaurantButton.setOnClickListener(new View.OnClickListener() {
-                  @Override
-                  public void onClick(View v) {
-                      String location = mlocationEditText.getText().toString();
+        }
+
+
+        @Override
+        public void onClick(View v) {
+        if(v == mFindRestaurantsButton){
+            String location = mLocationEditText.getText().toString();
                       Intent intent = new Intent(MainActivity.this, RestaurantsActivity.class);
                       intent.putExtra("location",location);
                       startActivity(intent);
                   }
-              });
+              };
     }
-}
+

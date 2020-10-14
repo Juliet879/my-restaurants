@@ -12,7 +12,7 @@ public class YelpBusinessesSearchResponse {
     private Integer total;
     @SerializedName("businesses")
     @Expose
-    private List<Business> businesses = null;
+    private List<com.moringaschool.myrestaurants.Business> businesses = null;
     @SerializedName("region")
     @Expose
     private Region region;
