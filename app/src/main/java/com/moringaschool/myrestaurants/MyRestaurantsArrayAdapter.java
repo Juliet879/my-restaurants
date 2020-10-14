@@ -5,7 +5,7 @@ import android.widget.ArrayAdapter;
 
 import androidx.annotation.Nullable;
 
-class MyRestaurantsArrayAdapter extends ArrayAdapter {
+public class MyRestaurantsArrayAdapter extends ArrayAdapter {
     private Context mContext;
     private String[] mRestaurants;
     private  String[] mCuisines;

@@ -3,8 +3,7 @@ import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 import androidx.test.runner.AndroidJUnit4;
 
-import com.moringaschool.myrestaurants.MainActivity;
-import com.moringaschool.myrestaurants.R;
+import com.moringaschool.myrestaurants.ui.MainActivity;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;

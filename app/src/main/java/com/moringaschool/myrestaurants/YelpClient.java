@@ -9,9 +9,10 @@ import okhttp3.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-import static com.moringaschool.myrestaurants.BuildConfig.YELP_API_KEY;
+import static com.moringaschool.myrestaurants.Constants.YELP_API_KEY;
+import static com.moringaschool.myrestaurants.Constants.YELP_BASE_URL;
 
-public class YelpCLient {
+public class YelpClient {
     private static Retrofit retrofit = null;
 
     public static YelpApi getClient() {
@@ -38,6 +39,4 @@ public class YelpCLient {
 
         return retrofit.create(YelpApi.class);
     }
-}
-
 }

@@ -4,9 +4,6 @@ package com.moringaschool.myrestaurants;
 import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
-import com.moringa.myrestaurants.Category;
-import com.moringa.myrestaurants.Coordinates;
-import com.moringa.myrestaurants.Location;
 
 public class Business {
 
@@ -30,7 +27,7 @@ public class Business {
     private Boolean isClosed;
     @SerializedName("categories")
     @Expose
-    private List<com.moringa.myrestaurants.Category> categories = null;
+    private List<Category> categories = null;
     @SerializedName("review_count")
     @Expose
     private Integer reviewCount;
@@ -42,13 +39,13 @@ public class Business {
     private String url;
     @SerializedName("coordinates")
     @Expose
-    private com.moringa.myrestaurants.Coordinates coordinates;
+    private Coordinates coordinates;
     @SerializedName("image_url")
     @Expose
     private String imageUrl;
     @SerializedName("location")
     @Expose
-    private com.moringa.myrestaurants.Location location;
+    private Location location;
     @SerializedName("distance")
     @Expose
     private Double distance;
